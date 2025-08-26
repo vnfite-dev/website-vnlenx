@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title> </title>
+    <style>
+      body {
+        font-family: "Times New Roman";
+        font-size: 12pt;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        margin: 0pt;
+      }
+      h1 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        page-break-after: avoid;
+        font-family: "Times New Roman";
+        font-size: 24pt;
+        font-weight: bold;
+        color: #000000;
+      }
+      h2 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        page-break-after: avoid;
+        font-family: "Times New Roman";
+        font-size: 18pt;
+        font-weight: bold;
+        font-style: normal;
+        color: #000000;
+      }
+      h3 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        page-break-after: avoid;
+        font-family: "Times New Roman";
+        font-size: 14pt;
+        font-weight: bold;
+        color: #000000;
+      }
+      h4 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        page-break-after: avoid;
+        font-size: 12pt;
+        font-weight: bold;
+        color: #000000;
+      }
+      h5 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        page-break-after: avoid;
+        font-size: 11pt;
+        font-weight: bold;
+        font-style: normal;
+        color: #000000;
+      }
+      h6 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        page-break-after: avoid;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #000000;
+      }
+      .NormalWeb {
+        font-size: 12pt;
+        color: #000000;
+      }
+      .c0 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        text-align: justify;
+        font-size: 12pt;
+        color: #000000;
+      }
+      .c1 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        text-align: justify;
+        font-size: 12pt;
+        color: #000000;
+        background-color: #ffffff;
+      }
+      .c10 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        text-align: center;
+        font-size: 12pt;
+        color: #000000;
+      }
+      .c11 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        font-size: 11pt;
+        color: #000000;
+      }
+      .c12 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        font-size: 12pt;
+        color: #000000;
+      }
+      .c13 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        text-align: justify;
+        font-size: 12pt;
+        color: #000000;
+        background-color: #ffffff;
+      }
+      .c14 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        text-align: justify;
+        font-size: 12pt;
+        color: #000000;
+        background-color: #ffffff;
+      }
+      .c15 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        font-size: 12pt;
+        color: #000000;
+        background-color: #ffffff;
+      }
+      .c16 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        font-size: 14pt;
+        font-weight: bold;
+        color: #000000;
+        background-color: #ffffff;
+      }
+      .c17 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        font-size: 12pt;
+        color: #000000;
+      }
+      .c18 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        font-size: 12pt;
+        color: #000000;
+        background-color: #ffffff;
+      }
+      .c19 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        font-size: 14pt;
+        font-weight: bold;
+        color: #000000;
+      }
+      .c2 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        font-size: 11pt;
+        color: #000000;
+      }
+      .c3 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        text-align: justify;
+        font-size: 12pt;
+        color: #000000;
+        background-color: #ffffff;
+      }
+      .c4 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        font-size: 11pt;
+        font-weight: bold;
+        color: #000000;
+      }
+      .c5 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        text-align: justify;
+        font-size: 12pt;
+        color: #000000;
+        background-color: #ffffff;
+      }
+      .c6 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        font-size: 11pt;
+        font-weight: bold;
+        color: #000000;
+      }
+      .c7 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        text-align: center;
+        font-size: 12pt;
+        color: #000000;
+        background-color: #ffffff;
+      }
+      .c8 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        font-size: 12pt;
+        color: #000000;
+      }
+      .c9 {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        font-size: 11pt;
+        color: #3a3a3a;
+      }
+      .msonormal {
+        font-size: 12pt;
+        color: #000000;
+      }
+      .subtitle {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        page-break-after: avoid;
+        font-family: Georgia;
+        font-size: 24pt;
+        font-style: italic;
+        color: #666666;
+      }
+      .title {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        page-break-after: avoid;
+        font-size: 36pt;
+        font-weight: bold;
+        color: #000000;
+      }
+      span.Heading1Char {
+        font-family: "Calibri Light";
+        font-size: 16pt;
+        color: #2f5496;
+      }
+      span.Heading2Char {
+        font-family: "Calibri Light";
+        font-size: 13pt;
+        color: #2f5496;
+      }
+      span.Heading3Char {
+        font-family: "Calibri Light";
+        font-size: 12pt;
+        color: #1f3763;
+      }
+      span.Heading4Char {
+        font-family: "Calibri Light";
+        font-size: 12pt;
+        font-style: italic;
+        color: #2f5496;
+      }
+      span.Heading5Char {
+        font-family: "Calibri Light";
+        font-size: 12pt;
+        color: #2f5496;
+      }
+      span.Heading6Char {
+        font-family: "Calibri Light";
+        font-size: 12pt;
+        color: #1f3763;
+      }
+      span.c111 {
+        font-size: 11pt;
+      }
+      span.c161 {
+        font-size: 14pt;
+        font-weight: bold;
+        background-color: #ffffff;
+      }
+      span.c21 {
+        font-family: "Times New Roman";
+        font-size: 11pt;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: none;
+        vertical-align: baseline;
+        color: #000000;
+      }
+      span.c41 {
+        font-family: "Times New Roman";
+        font-size: 11pt;
+        font-weight: bold;
+        font-style: normal;
+        text-decoration: none;
+        vertical-align: baseline;
+        color: #000000;
+        margin-top: 10pt;
+      }
+      span.c61 {
+        font-size: 11pt;
+        font-weight: bold;
+      }
+      span.c91 {
+        font-family: "Times New Roman";
+        font-size: 11pt;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: none;
+        vertical-align: baseline;
+        color: #3a3a3a;
+      }
+      @media (max-width: 900px) {
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        .table-container {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+
+        td,
+        th {
+          padding: 8px;
+          text-align: left;
+          border: 1px solid #ddd;
+        }
+      }
+    </style>
+  </head>
+  <body style="background: #ffffff">
+    <p class="c17" style="margin-top: 0pt; margin-bottom: 0pt">
+      <img src="images/privacy.png" width="32" height="32" alt="" />
+    </p>
+    <p class="c10" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 14pt">
+      <span class="c161"
+        >BẢN ĐIỀU KHOẢN, ĐIỀU KIỆN SỬ DỤNG ỨNG DỤNG XFINANCE</span
+      >
+    </p>
+    <p class="c13" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c111">*</span><span class="c61">Quan trọng</span
+      ><span class="c21"
+        >* – vui lòng đọc kỹ những điều khoản sử dụng dịch vụ được quy định dưới
+        đây (“Điều khoản sử dụng” hoặc “Hợp Đồng”). Bằng việc sử dụng Dịch vụ
+        (như được định nghĩa dưới đây), Người dùng đồng ý rằng Người dùng đã
+        đọc, hiểu rõ ràng, chấp nhận và đồng ý hoàn toàn trên cơ sở tự nguyện
+        với Điều khoản sử dụng. Người dùng cũng đồng ý với X-finance về toàn bộ
+        các điều khoản, điều kiện dưới đây. Nếu Người dùng không đồng ý hoặc
+        không thuộc phạm vi điều chỉnh của Điều khoản sử dụng và không muốn tiếp
+        tục sử dụng Dịch vụ, vui lòng không tiếp tục sử dụng Ứng dụng Xfinance
+        (như được định nghĩa dưới đây) hoặc Dịch vụ này. Điều khoản, điều kiện
+        sử dụng ứng dụng Xfinance này cấu thành một Thỏa thuận pháp lý, ràng
+        buộc và có hiệu lực thi hành giữa Người dùng và Công ty Cổ phần Công
+        nghệ Tài chính VNFITE (Mã số Doanh nghiệp: 0109423042) (gọi là “Công ty”
+        hoặc “VNFITE”). Người dùng để sử dụng Dịch vụ của Xfinance phải đồng ý
+        với Điều khoản sử dụng được quy định sau đây và thực hiện các thủ tục
+        đăng ký tài khoản. Bằng việc sử dụng ứng dụng Xfinance hoặc website:
+        https://vnfite.com.vn (gọi tắt là “Ứng dụng Xfinance”) được cung cấp bởi
+        Công ty, Thành viên/Người dùng (gọi chung là Người dùng) theo đây xác
+        nhận và đồng ý một cách rõ ràng rằng Người dùng sẽ chịu sự ràng buộc của
+        các Điều khoản sử dụng, và bất kỳ sửa đổi, bổ sung nào đối với Điều
+        khoản sử dụng này được công bố tại từng thời điểm trên website
+        https://vnfite.com.vn và/hoặc thông qua Ứng dụng Xfinance.</span
+      >
+    </p>
+    <p class="c13" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">I. GIỚI THIỆU ỨNG DỤNG XFINANCE</span>
+    </p>
+    <p class="c14" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >“Ứng dụng Xfinance” là một ứng dung kết nối hỗ trợ dịch vụ tài chính,
+        do Công ty Cổ phần Công nghệ Tài chính VNFITE sở hữu, cung cấp, và vận
+        hành. Xfinance cung cấp dịch vụ để “Nhà đầu tư” và “Nhà nhận đầu tư”
+        thực hiện giao dịch tài chính (đầu tư và huy động vốn đầu tư trực tuyến)
+        qua ứng dụng Xfinance. Khi “Nhà đầu tư” và “Nhà nhận đầu tư” xác lập
+        giao dịch, các bên đã ký kết “Hợp đồng dịch vụ tư vấn đầu tư điện tử” và
+        “Hợp đồng tư vấn và quản lý vốn đầu tư điện tử” qua Ứng dụng Xfinance.
+        Các Bên liên quan đến giao dịch sẽ hoàn toàn chịu trách nhiệm với hợp
+        đồng điện tử đã ký kết này. Xfinance là bên trung gian cung cấp công cụ,
+        giải pháp để các bên thực hiện và quản lý giao dịch, đồng thời kết nối,
+        hỗ trợ thực hiện giao dịch giữa “Nhà đầu tư” và “Nhà nhận đầu tư”.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">II. GIẢI THÍCH TỪ NGỮ</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >1. Nhà đầu tư: Là các Nhà đầu tư tổ chức(xfinance),cá nhân có mong muốn
+        tìm kiếm cơ hội đầu tư bằng hình thức ký “Hợp đồng dịch vụ tư vấn đầu tư
+        điện tử” với X-finance để đổi lại nhận các khoản tiền lãi và gốc trả từ
+        Nhà nhận đầu tư.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >2. Nhà nhận đầu tư: Là cá nhân, doanh nghiệp, hộ kinh doanh có nhu cầu
+        gọi vốn (huy động vốn đầu tư), thông qua việc sử dụng Ứng dụng X-finance
+        để đăng tải thông tin về nhu cầu gọi vốn phục vụ kinh doanh, tiêu dùng
+        hoặc các mục đích khác của mình để được kết nối với “Nhà đầu tư”, chấp
+        thuận xác lập quan hệ nhận vốn đầu tư với Xfinance bằng hình thức ký
+        “Hợp đồng tư vấn và quản lý vốn đầu tư điện tử”.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >3. Hợp đồng dịch vụ tư vấn đầu tư điện tử: Là hợp đồng ký kết dưới hình
+        thức Hợp đồng điện tử giữa Nhà đầu tư với Xfinance theo đó Xfinance sẽ
+        tư vấn cho Nhà đầu tư trong việc đầu tư vốn và cung cấp dịch vụ theo
+        dõi, thông báo và hỗ trợ nhắc các Nhà nhận đầu tư trả nợ gốc và lãi theo
+        “Hợp đồng tư vấn và quản lý vốn đầu tư điện tử” đã ký kết.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >4. Hợp đồng tư vấn và quản lý vốn đầu tư điện tử: Là hợp đồng ký kết
+        dưới hình thức Hợp đồng điện tử giữa Nhà đầu tư và Nhà nhận đầu tư theo
+        đó Nhà đầu tư sẽ tài trợ một phần hoặc toàn bộ số Note theo nhu cầu của
+        Nhà nhận đầu tư để phục vụ hoạt động kinh doanh hay tiêu dùng. Đổi lại,
+        nhà đầu tư sẽ được các Nhà nhận đầu tư hoàn trả tiền gốc và lãi theo
+        lịch trả nợ đã xác định.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >5. Thành viên/người dùng: Là các chủ thể cài đặt và sử dụng Ứng dụng
+        Xfinance, bao gồm cả Nhà nhận đầu tư và Nhà đầu tư.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >6. Dịch vụ Xfinance cung cấp: Là hoạt động kết nối, hỗ trợ dịch vụ tài
+        chính, hỗ trợ dịch vụ đầu tư được giao dịch thông qua Ứng dụng X-finance
+        và các dịch vụ khác được Xfinance triển khai cho thành viên/người
+        dùng.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >7. Tài khoản bảo chứng: Là tài khoản của khách hàng mở sau khi thông
+        qua việc đồng ý với “Điều khoản, điều kiện sử dụng ứng dụng Xfinance” để
+        thực hiện các giao dịch tại X-finance.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >8. Số dư khả dụng của thành viên/người dùng trong Tài khoản bảo chứng
+        trên ứng dụng Xfinance: Là thể hiện của số tiền Việt Nam Đồng tương ứng
+        của thành viên/người dùng đang uỷ quyền cho VNFITE tạm giữ hộ để đảm bảo
+        thực hiện các giao dịch/nghĩa vụ/trách nhiệm của thành viên/người dùng
+        trên ứng dụng X-finance. Số dư khả dụng này có thể được hình thành bởi
+        giao dịch nộp tiền/chuyển tiền của thành viên/người dùng tới tài khoản
+        ngân hàng/tài khoản khác của Xfinance, hoặc do thành viên/người dùng
+        được Xfinance giải ngân “Hợp đồng tư vấn và quản lý vốn đầu tư điện tử”
+        theo đề nghị xác lập khoản đầu tư của Nhà đầu tư, hoặc người khác chuyển
+        khoản tiền từ tài khoản ngân hàng đến tài khoản bảo chứng của thành
+        viên/người dùng trên ứng dụng Xfinance theo đúng hướng dẫn nộp tiền của
+        Xfinance, hoặc do thành viên/người dùng được nhận tiền gốc và tiền lãi
+        khi đầu tư qua ứng dụng Xfinance. Thành viên/người dùng không được hưởng
+        bất kỳ khoản tiền lãi nào trên số dư khả dụng này.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >9. Sở hữu trí tuệ: Là bất kỳ bằng sáng chế, bản quyền, thiết kế được
+        đăng ký hoặc chưa được đăng ký, quyền đối với thiết kế, nhãn hiệu được
+        đăng ký hoặc chưa đăng ký, nhãn hiệu dịch vụ hoặc quyền sở hữu công
+        nghiệp hoặc sở hữu trí tuệ khác và bao gồm các ứng dụng cho bất kỳ mục
+        nào trong những mục trên.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >10. Ứng dụng Xfinance: Là phần mềm, ứng dụng và công nghệ của VNFITE
+        thông qua đó Người dùng sử dụng các dịch vụ do VNFITE cung cấp. Các
+        đường link để người dùng có thể download hoặc sử dụng Ứng dụng VNFITE
+        như sau:</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">(i) Phiên bản IOS: …………………………………….</span>
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">(ii) Phiên bản Android: …………………………………….</span>
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">(iii) Phiên bản Website: www.vnfite.com.vn</span>
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">IV. NĂNG LỰC CHỦ THỂ CỦA NGƯỜI DÙNG</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Điều kiện để có thể đăng ký tài khoản và sử dụng các dịch vụ trên ứng
+        dụng Xfinance là công dân Việt Nam từ đủ 18 tuổi trở lên, để đảm bảo
+        Người dùng có năng lực hành vi dân sự đầy đủ, tự chịu trách nhiệm về bất
+        kỳ hành vi, giao dịch nào do Người dùng thực hiện trên ứng dụng
+        Xfinance. Nếu Người dùng không phải là công dân Việt Nam và chưa đủ 18
+        tuổi VUI LÒNG KHÔNG ĐĂNG KÝ VÀ SỬ DỤNG CÁC DỊCH VỤ TRÊN ỨNG DỤNG
+        Xfinance. Nếu Người dùng không phải là công dân Việt Nam và chưa đủ 18
+        tuổi nhưng cố tình cung cấp thông tin sai sự thật và vẫn cố tình sử dụng
+        các giao dịch trên ứng dụng X-finance thì VNFITE có quyền liên hệ và yêu
+        cầu người đại diện theo pháp luật của Người dùng chịu trách nhiệm về tất
+        cả các hành vi, giao dịch mà Người dùng đã thực hiện, xác lập trên ứng
+        dụng X-finance.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">V. CUNG CẤP THÔNG TIN ( LOCATION )</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Khi tạo tài khoản và sử dụng ứng dụng Xfinance, thành viên/người dùng
+        cần cung cấp trung thực, chính xác các thông tin cá nhân của mình, bao
+        gồm nhưng không giới hạn thông tin về họ tên, số chứng minh thư nhân
+        dân/hộ chiếu/thẻ căn cước công dân (bản gốc của Cơ quan có thẩm quyền
+        cấp, bản photo), email, nơi đăng ký thường trú, độ tuổi, số điện thoại
+        liên hệ, công việc (đối với người dùng là cá nhân); hoặc số, ngày cấp,
+        nơi cấp giấy chứng nhận đăng ký kinh doanh, giấy phép thành lập và hoạt
+        động (đối với người dùng là tổ chức). Thành viên/người dùng hoàn toàn
+        chịu trách nhiệm về các thông tin mà mình cung cấp. Đây là cách hữu hiệu
+        để thành viên/người dùng chủ động tăng uy tín, độ tín nhiệm của người
+        dùng trước các Nhà đầu tư/Nhà nhận đầu tư và với X-finance. Trước khi
+        quyết định xác lập giao dịch, thành viên/người dùng có thể hoàn toàn chủ
+        động và độc lập trong việc thẩm định thông tin của bên còn lại. Xfinance
+        cung cấp hệ thống quản lý, đánh giá, xác thực thông tin người dùng bằng
+        cố gắng và nỗ lực tối đa để kiểm soát, kiểm tra thông tin người dùng,
+        nhưng sẽ không chịu trách nhiệm pháp lý về tính xác thực của thông tin
+        này. Nếu người dùng tạo khoản vay thì phải được chấp thuận yêu cầu về
+        trị trí (Location ) để tạo khoản vay và người dùng có thể chấp nhận hoặc
+        không chấp nhận việc chia sẻ quyền vị trí.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">VI. TÀI KHOẢN TRUY CẬP VÀ BẢO MẬT</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >1. Để sử dụng các dịch vụ trên ứng dụng Xfinance, người dùng cần đăng
+        ký tạo tài khoản của chính mình. Theo quy định của Xfinance, mỗi người
+        dùng chỉ được sử dụng một tài khoản duy nhất trên ứng dụng Xfinance và
+        người dùng phải tự chịu trách nhiệm về việc bảo mật, đảm bảo an toàn cho
+        tất cả các thông tin liên quan đến giao dịch trên Ứng dụng Xfinance như
+        tên truy cập, mật khẩu truy cập/ đặt lệnh, OTP, câu hỏi để thiết lập lại
+        Mật khẩu và các yếu tố định danh khác của khách hàng …</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >2. Người dùng chịu toàn bộ trách nhiệm về việc theo dõi tài khoản, giao
+        dịch của mình và phải ngay lập tức thông báo cho Xfinance bằng văn
+        bản/điện thoại/email nếu thành viên/người dùng biết hoặc nghi ngờ
+        rằng:</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >a. Bất kỳ các thông tin truy cập nào hoặc bất kỳ công cụ bảo mật nào
+        (như mật khẩu, câu hỏi bảo mật, OTP…) bị mất, lạm dụng hoặc được biết
+        đến bởi bất kỳ người nào không phải là chính thành viên/người dùng,
+        hoặc</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >b. Thành viên/người dùng không nhận được thông tin xác nhận từ Xfinance
+        cho biết rằng chỉ thị, lệnh/yêu cầu thực hiện giao dịch do người dùng
+        đưa ra đã được ghi nhận vào hệ thống của ứng dụng Xfinance, đã được chấp
+        nhận/xử lý bởi Xfinance hoặc các thành viên đối tác liên kết khác của
+        Xfinance</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >c. Khi phát hiện sai sót, bị lỗi trong khi thực hiện giao dịch, số dư
+        trong tài khoản đầu tư của bạn bị mất, bị lợi dụng chiếm hữu, làm tổn
+        thất tài sản đầu tư.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >3. Người dùng phải chịu trách nhiệm cho mọi giao dịch, chỉ thị/lệnh
+        được thực hiện qua ứng dụng Xfinance bằng tài khoản/tên truy cập và mật
+        khẩu của người dùng và chịu các chi phí phát sinh cho các bên liên quan.
+        Trừ trường hợp người dùng đã thông báo cho Xfinance về việc người dùng
+        bị mất, bị lạm dụng, bị tiết lộ hoặc bị đánh cắp các thông tin liên quan
+        đến giao dịch trên ứng dụng X-finance và X-finance đã có thời gian hợp
+        lý để có các hành động cần thiết nhằm tạm dừng các giao dịch từ tài
+        khoản/tên truy cập của người dùng theo thông báo đó.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">VII. QUYỀN SỞ HỮU TRÍ TUỆ</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >1. Nhãn hiệu, tên thương mại, logo, các nội dung và các thông tin, hình
+        ảnh, video khác được thể hiện trên ứng dụng Xfinance thuộc quyền sở hữu
+        của X-finance hoặc đối tác của X-finance. Bất kỳ hành vi sao chép, tái
+        bản, phát tán nhãn hiệu, tên thương mại, logo, các nội dung và các thông
+        tin, hình ảnh, video khác của Xfinance dưới bất kỳ hình thức nào đều là
+        hành vi xâm phạm nghiêm trọng tới quyền lợi và uy tín hợp pháp của
+        Xfinance, trừ trường hợp được sự đồng ý bằng văn bản của Xfinance về
+        việc cho phép sử dụng các hình ảnh, thông tin này.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >2. Khi đánh dấu vào mục chấp nhận với Bản điều khoản điều kiện này, tức
+        là người dùng đã cam kết và đồng ý sẽ tuân thủ tuyệt đối các quy định về
+        nghĩa vụ bảo mật thông tin, tôn trọng bản quyền nhãn hiệu, tên thương
+        mại, logo và các thông tin, hình ảnh khác tại Bản điều khoản điều kiện
+        này và các quy định có liên quan khác của Xfinance.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">VIII. GIAO DỊCH TRÊN ỨNG DỤNG XFINANCE</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Để thực hiện toàn bộ các giao dịch, dịch vụ trên Ứng dụng Xfinance
+        người dùng cần thực hiện và tuân thủ theo các hướng dẫn cơ bản như
+        sau:</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">1. Với Nhà nhận đầu tư:</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Người dùng cần tải ứng dụng Xfinance, đăng ký và đăng nhập tài khoản
+        trên Ứng dụng X-finance để gửi hồ sơ online đến Xfinance. Dựa trên thông
+        tin, hồ sơ do người dùng cung cấp và các thông tin thu thập khác,
+        Xfinance sẽ đánh giá điểm/ xếp hạng tín nhiệm và thông báo hạn mức tối
+        đa có thể đăng ký huy động vốn đầu tư của Nhà nhận đầu tư. Khi Nhà nhận
+        đầu tư tạo yêu cầu/ đề nghị huy động vốn đầu tư qua ứng dụng X-finance
+        và được một hoặc nhiều Nhà đầu tư chấp nhận đăng ký giao dịch đầu tư,
+        dựa trên đề nghị của Nhà đầu tư thì X-finance sẽ chuyển tiền giải ngân
+        tiền đầu tư đến cho Nhà nhận đầu tư.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">2. Với Xfinance:</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Sau khi Nhà đầu tư và Nhà nhận đầu tư đồng ý chấp nhận xác lập giao
+        dịch đầu tư và huy động vốn đầu tư (bao gồm cả giao dịch đầu tư thủ
+        công, hay đầu tư tự động theo nhóm), dựa trên đề nghị, xác nhận của Nhà
+        đầu tư – Xfinance sẽ chuyển tiền giải ngân tiền đầu tư ngay lập tức cho
+        Nhà nhận đầu tư vào tài khoản của Nhà nhận đầu tư trên hệ thống
+        Xfinance; đồng thời ứng dụng Xfinance sinh ra “Hợp đồng dịch vụ tư vấn
+        đầu tư điện tử” và “Hợp đồng tư vấn và quản lý vốn đầu tư điện tử” với
+        các nội dung cụ thể sẽ ghi nhận tất cả các thoả thuận của các bên. Sau
+        khi các Hợp đồng điện tử nêu trên được giao kết thì ứng dụng Xfinance sẽ
+        gửi thông tin liên quan đến việc giao kết Hợp đồng điện tử vào địa chỉ
+        email hoặc hiển thị thông tin cơ bản trong tài khoản trên Ứng dụng
+        X-finance của các bên giao kết hợp đồng với các thông tin cơ bản: ngày
+        hợp đồng có hiệu lực, số tiền đầu tư/nhận đầu tư, lãi suất (trong hạn,
+        chậm trả), phạt chậm trả, thời hạn đầu tư, kỳ hạn trả nợ, số tiền gốc và
+        lãi/phí mà Nhà nhận đầu tư phải trả trong kỳ trả nợ.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">IX. BẢO MẬT THÔNG TIN</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Xfinance và các thành viên/người dùng có nghĩa vụ bảo mật tất cả thông
+        tin các bên trao đổi, giao dịch với nhau, bao gồm nhưng không giới hạn ở
+        các thông tin sau: thông tin được Xfinance cung cấp và đăng tải trên ứng
+        dụng Xfinance, thông tin về dịch vụ, quy trình, chính sách cung cấp sản
+        phẩm của Xfinance được đưa lên ứng dụng Xfinance; thông tin về người
+        dùng/thành viên của ứng dụng Xfinance bao gồm thông tin nhân thân, thông
+        tin giao dịch,…</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">1. Quyền và nghĩa vụ của các thành viên</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Các thành viên/người dùng cam kết bảo mật các thông tin giao dịch trên
+        Xfinance, không cung cấp cho bất kỳ bên thứ 3 nào khác không phải là đối
+        tác của Xfinance vì/không vì mục đích thương mại trong trường hợp chưa
+        được Xfinance cho phép bằng văn bản.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">2. Quyền, nghĩa vụ và cam kết của Xfinance</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >a. Xfinance cam kết tuân thủ tuyệt đối nghĩa vụ bảo mật thông tin của
+        thành viên/người dùng theo đúng quy định của pháp luật.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >b. Xfinance có quyền thu thập thông tin cá nhân, thông tin hoạt động,
+        thông tin giao dịch của các thành viên/người dùng nhằm mục đích thẩm
+        định, đánh giá điểm/ xếp hạng tín nhiệm liên quan đến người dùng, cung
+        cấp dịch vụ kết nối các thành viên/người dùng, tìm kiếm đối tác nhằm mục
+        đích phát triển mạng lưới kết nối, phát triển sản phẩm, tính năng và
+        nâng cao chất lượng dịch vụ phục vụ cho lợi ích và nhu cầu của các thành
+        viên/người dùng.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >c. Xfinance đảm bảo mọi thông tin liên quan đến các thành viên/người
+        dùng được sử dụng để phục vụ công việc, cung cấp dịch vụ cho các thành
+        viên/người dùng; đồng thời, Xfinance luôn nỗ lực tối đa trong việc chủ
+        động ngăn chặn việc sử dụng trái phép và/hoặc tiết lộ các thông tin của
+        các thành viên/người dùng.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >d. Xfinance có quyền cung cấp các thông tin thành viên/người dùng cho
+        người quản lý, nhân viên, người lao động của X-finance hoặc đối tác trên
+        nguyên tắc chỉ cung cấp thông tin cho những người này nhằm thực hiện các
+        nghĩa vụ của Xfinance đối với các thành viên/người dùng hoặc nhằm nâng
+        cao chất lượng dịch vụ. X-finance cam kết sẽ thông báo người quản lý,
+        nhân viên, người lao động hoặc đối tác về nghĩa vụ bảo mật các thông tin
+        này.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >e. Xfinance có thể lưu trữ và sử dụng thông tin của thành viên/người
+        dùng cho mục đích: (i) hỗ trợ thành viên/người dùng sử dụng sản phẩm,
+        dịch vụ của Xfinance; (ii) thực hiện các hoạt động quảng bá, tiếp thị có
+        liên quan đến dịch vụ của Xfinance; (iii) thực hiện các bản khảo sát
+        khách hàng và nghiên cứu thị trường; (iv) cải thiện và nâng cao chất
+        lượng dịch vụ của Xfinance; và (v) quản trị, lập các thống kê về tình
+        hình sử dụng dịch vụ.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >3. Các trường hợp loại trừ nghĩa vụ Xfinance không phải thực hiện nghĩa
+        vụ bảo mật theo quy định tại Bản điều khoản điều kiện này đối với các
+        thông tin sau:</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >a. Thông tin được công khai trên các phương tiện thông tin đại chúng
+        và/hoặc mạng xã hội mà không phải do lỗi của Xfinance; Thông tin được
+        Xfinance phát triển, thu thập độc lập mà không sử dụng các thông tin do
+        thành viên cung cấp.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >b. Trong trường hợp cơ quan nhà nước yêu cầu Xfinance cung cấp thông
+        tin liên quan đến các thành viên/người dùng theo quy định của pháp luật.
+        X-finance cam kết chỉ cung cấp phần thông tin liên quan đến thành
+        viên/người dùng mà cơ quan Nhà Nước yêu cầu.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >4. Vi phạm nghĩa vụ bảo mật thông tin Trong trường hợp một bên vi phạm
+        nghĩa vụ bảo mật thông tin mà gây thiệt hại cho bên còn lại thì bên đó
+        có trách nhiệm bồi thường thiệt hại cho bên kia theo giá trị thiệt hại
+        trên thực tế, bao gồm các thiệt hại trực tiếp mà bên bị vi phạm đáng lẽ
+        được hưởng nếu không có hành vi vi phạm. Đồng thời, bên vi phạm phải
+        ngay lập tức thực hiện các biện pháp cần thiết để chấm dứt hành vi vi
+        phạm.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">X. XỬ LÝ VI PHẠM</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Trong trường hợp thành viên/người dùng vi phạm bất kỳ nội dung nào
+        trong Bản điều khoản, điều kiện sử dụng dịch vụ này, Xfinance có quyền
+        khóa tài khoản, hoặc khoá quyền truy cập tài khoản/ứng dụng,hoặc khóa
+        một số tính năng giao dịch/sử dụng dịch vụ của thành viên/người dùng đó.
+        Việc khóa tài khoản hay quyền truy cập không làm chấm dứt các nghĩa vụ
+        tài chính mà thành viên phải thực hiện với X-finance hoặc với các thành
+        viên/người dùng khác. Trong bất cứ trường hợp nào, các nghĩa vụ tài
+        chính của thành viên đó chỉ chấm dứt khi họ hoàn thành nghĩa vụ tài
+        chính với X-finance và/hoặc với các thành viên/người dùng khác.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">XI. RỦI RO</span>
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">1. Rủi ro </span>
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Bằng việc chấp nhận Bản điều khoản, điều kiện này, thành viên/người
+        dùng nhận biết và chấp nhận có các rủi ro liên quan đến vấn đề an ninh,
+        bảo mật và các rủi ro khác liên quan tới việc sử dụng ứng dụng
+        X-finance, bao gồm nhưng không giới hạn:</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >a. Sự cố phần cứng, phần mềm của thiết bị máy tính, hạ tầng mạng,… của
+        Xfinance hoặc nhà cung cấp của X-finance;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >b. Xfinance bị tấn công phá hoại, hoặc bị sử dụng trái phép quyền truy
+        cập, quản lý ứng dụng Xfinance;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >c. Sự yếu tấn công vào hệ thống an ninh mạng dẫn tới tình trạng hệ
+        thống mạng, máy tính của Xfinance bị phá hoại bởi tin tặc dưới các hình
+        thức như: xâm nhập trái phép vào mạng máy tính, cơ sở dữ liệu, thực hiện
+        các hành vi lừa đảo,…</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >d. Hệ thống mạng hoặc máy tính của các Bên bị nhiễm virus, phần mềm
+        gián điệp hoặc các mã độc;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">e. Các rủi ro khác (nếu có).</span>
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">2. Hệ quả do các rủi ro gây ra</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Các rủi ro nêu trên có thể dẫn đến một hoặc một số hệ quả sau:</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >a. Thành viên/người dùng không thể truy cập vào ứng dụng X-finance để
+        thực hiện giao dịch;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >b. Thành viên có thể truy cập vào ứng dụng X-finance nhưng các giao
+        dịch được thành viên/người dùng thực hiện hoặc đưa ra không nhận được sự
+        chấp thuận hoặc cho phép thực hiện từ X-finance;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >c. Thành viên/người dùng bị mất hoặc chiếm đoạt dữ liệu tạm thời, mật
+        khẩu, thông tin mật hoặc thông tin khác về mặt cá nhân hoặc về mặt
+        thương mại;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">d. Các hệ quả khác (nếu có).</span>
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">3. Chấp thuận của người dùng</span>
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Mặc dù Xfinance sẽ luôn luôn nỗ lực để đảm bảo, nâng cấp cho hệ thống
+        hoạt động chính xác, bảo toàn dữ liệu, thông tin giao dịch và thông tin
+        người dùng, nhưng sẽ không thể lường trước được hết tất các trường hợp
+        rủi ro bất khả kháng có thể xảy ra. Vì vậy, thành viên/người dùng hiểu
+        và đồng ý rằng khi thành viên/người dùng sử dụng ứng dụng Xfinance do
+        Xfinance cung cấp, thành viên/người dùng hoàn toàn nhận thức được về các
+        rủi ro có thể phát sinh từ việc sử dụng ứng dụng X-finance và sẵn sàng
+        chịu những rủi ro, thiệt hại phát sinh từ việc sử dụng hệ thống này.
+        Trong trường hợp Xfinance gặp sự cố liên quan đến nền tảng ứng dụng
+        X-finance, dẫn đến việc không đảm bảo được việc nhận các giao dịch, xác
+        lập giao dịch, chỉ thị/lệnh của thành viên/người dùng một cách chính xác
+        về mặt thời gian/dữ liệu, Xfinance có quyền ngay lập tức tạm dừng cung
+        cấp dịch vụ để khắc phục sự cố.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c61">XII. QUYỀN VÀ NGHĨA VỤ CỦA </span
+      ><span class="c111">Xfinance</span>
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">1. Quyền của Xfinance</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >a. Xfinance được quyền từ chối/ tạm khóa quyền sử dụng Dịch vụ, sử dụng
+        ứng dụng Xfinance</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >với Người dùng nếu Người dùng vi phạm bất kỳ điều khoản nào của các
+        loại Hợp đồng điện tử đã ký và/hoặc Điều khoản sử dụng dịch vụ và/hoặc
+        thỏa thuận khác với Công ty;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >b. Xfinance được quyền lưu trữ thông tin, dữ liệu giao dịch của thành
+        viên/người dùng và thường xuyên cập nhật những thông tin thay đổi, bổ
+        sung có liên quan;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >c. Đánh giá tín nhiệm người dùng, khuyến nghị hạn mức huy động vốn đầu
+        tư của người dùng;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >d. Có biện pháp xử lý kịp thời khi phát hiện hoặc nhận được phản ánh về
+        hành vi vi phạm pháp</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">luật của người dùng trên ứng dụng X-finance;</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >e. Quản lý, đảm bảo việc ghi nhận chính xác số dư khả dụng của thành
+        viên/người dùng trong tài khoản trên ứng dụng Xfinance. Và khi thành
+        viên/người dùng có yêu cầu rút tiền hợp lệ theo quy định của Xfinance
+        (bao gồm nhưng không chỉ giới hạn ở: số tiền rút nhỏ hơn hoặc bằng số dư
+        khả dụng của thành viên/người dùng trong tài khoản trên ứng dụng
+        Xfinance; cung cấp đầy đủ và đúng thông tin nhân thân, giấy CMND/CCCD,
+        tài khoản ngân hàng…) thì Xfinance có trách nhiệm chuyển số tiền tương
+        ứng theo yêu cầu của thành viên/người dùng (đã trừ phí giao dịch – nếu
+        có) tới tài khoản ngân hàng của thành viên/người dùng trong thời gian
+        tối đa là 8 giờ làm việc (kể từ thời điểm người dùng xác nhận lệnh rút
+        tiền trên ứng dụng X-finance);</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >f. Được toàn quyền quyết định đối với số tiền được chuyển vào Tài khoản
+        tiền giao dịch khi Người dùng chuyển tiền không đúng theo các hướng dẫn,
+        quy định của Xfinance được công bố công khai tới Người dùng thông qua
+        Ứng dụng Xfinance; Xfinance sẽ luôn hỗ trợ Thành viên/Người dùng tra
+        soát lại khoản chuyển tiền sai quy định và đảm bảo việc ghi nhận được
+        chính xác, minh bạch tránh gây thất thoát cho Người dùng với điều kiện
+        Người dùng cung cấp đầy đủ giấy tờ, tài liệu, hình ảnh chứng minh.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >g. Chuyển tiền, thu tiền trong tài khoản trên ứng dụng X-finance
+        cho/của thành viên/người dùng theo uỷ quyền của thành viên/người dùng
+        và/hoặc theo trách nhiệm của X-finance để bảo đảm việc thực hiện các
+        giao dịch/nghĩa vụ/trách nhiệm của thành viên/người dùng trên ứng dụng
+        X-finance;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >h. Hỗ trợ cơ quan quản lý nhà nước điều tra các hành vi vi phạm pháp
+        luật, cung cấp thông tin,</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >lịch sử giao dịch và các tài liệu khác về đối tượng có hành vi vi phạm
+        pháp luật trên ứng dụng Xfinance;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >i. Xây dựng Hợp đồng điện tử với các điều khoản rõ ràng về quyền lợi và
+        nghĩa vụ của mỗi bên tham gia, quy định và thu phí sử dụng dịch vụ kết
+        nối, điều kiện thanh toán chi phí, chế độ hỗ trợ, thưởng cho thành
+        viên/người dùng;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >j. Chấm dứt việc cung cấp dịch vụ đối với các trường hợp thành
+        viên/người dùng không đáp ứng đủ các điều kiện theo quy định của pháp
+        luật, hoặc vi phạm thỏa thuận của bản điều khoản này hoặc có hành vi vi
+        phạm pháp luật;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >k. Rà soát, kiểm định và xác nhận thông tin Người dùng, yêu cầu Người
+        dùng cung cấp các thông tin mà X-finance thấy cần thiết nhằm đảm bảo
+        Người dùng không sử dụng ứng dụng X-finance như một hình thức rửa tiền
+        hoặc để ngăn ngừa các hành vi phạm pháp khác;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >l. Trong quá trình khi thành viên/ người dùng sử dụng dịch vụ của
+        Xfinance và có những biểu hiện bất thường, hay khi có những sự kiện, vấn
+        đề có thể ảnh hưởng đến quyền lợi và lợi ích của Xfinance, thành
+        viên/người dùng khác và/hoặc xã hội cộng đồng, Xfinance có quyền áp dụng
+        những quyền hạn, hạn chế liên quan tới Người dùng, Tài khoản Người dùng
+        (bao gồm cả việc phong tỏa Tài khoản Người dùng) và thông báo tới cơ
+        quan quản lý cần thiết, đồng thời chấm dứt các Hợp đồng, dịch vụ đã ký
+        kết với Người dùng. Xfinance có quyền áp dụng biện pháp đơn phương dừng
+        cung cấp dịch vụ với những khách hàng có hành vi lừa đảo, hành vi vi
+        phạm đến quy định pháp luật, không đủ năng lực hành vi dân sự, mọi tổn
+        thất liên quan đến việc dừng cung cấp dịch vụ do khách hàng chịu.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">2. Nghĩa vụ của Xfinance</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >a. Đảm bảo tính minh bạch trong cung cấp thông tin cho thành viên/người
+        dùng;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >b. Đảm bảo độ bảo mật và ổn định của ứng dụng Xfinance;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >c. Thực hiện việc cập nhật Hệ thống phần mềm khi cần thiết để nâng cấp
+        chất lượng Dịch vụ và trải nghiệm sử dụng ứng dụng X-finance của thành
+        viên/người dùng;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >d. Hướng dẫn thành viên/người dùng về cách thức vận hành, sử dụng ứng
+        dụng kết nối, điều kiện và tiêu chuẩn cung cấp dịch vụ, phương thức
+        thanh toán và các nội dung khác;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >e. Áp dụng các biện pháp cần thiết để đảm bảo an toàn thông tin liên
+        quan đến giao dịch của thành viên/người dùng và thông tin cá nhân của
+        thành viên/người dùng.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >F. Bảo mật thông tin vị trí (location) cho người dùng</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">XIV. CHỮ KÝ ĐIỆN TỬ</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >1. Khi Thành viên/Người dùng đăng ký tài khoản và ấn vào một trong các
+        nút “Đăng ký”, “Tôi đồng ý", “Đăng ký bằng Google”, “Đăng ký bằng
+        Facebook”, “Đăng ký bằng số điện thoại” hoặc bất kỳ việc đăng ký hay
+        chấp thuận sử Dịch vụ/ Ứng dụng của X-finance theo một cách tương tự,
+        Người dùng đã đồng ý về tính hợp pháp của Điều khoản, điều kiện sử dụng
+        ứng dụng của X-finance này và hành động trên đã xác định tính pháp lý
+        của giao kết hợp đồng giữa Người dùng và X-finance.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >2. Khi Xfinance xác nhận việc đăng ký tài khoản Người dùng, Công ty xác
+        nhận tính pháp lý của giao kết hợp đồng giữa Người dùng và X-finance tại
+        Điều khoản, điều kiện sử dụng ứng dụng của X-finance này.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">XV. CÁC CAM KẾT KHÁC CỦA THÀNH VIÊN/NGƯỜI DÙNG</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >1. Thành Viên/Người dùng đồng ý rằng việc truy cập vào ứng dụng
+        X-finance có thể bị hạn chế hoặc không khả dụng theo thời gian, bao gồm
+        do bảo trì hoặc cải tiến hệ thống, nhu cầu sử dụng, trục trặc phần mềm
+        hoặc phần cứng hoặc xảy ra ngoài tầm kiểm soát của Công ty (bao gồm lỗi
+        của nhà điều hành, khối lượng thị trường và sự biến động, sự cố về điện,
+        sự cố thiết bị, sự cố liên lạc, thiên tai, hỏa hoạn, dịch bệnh, hành
+        động khủng bố và chiến tranh);</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >2. Thành Viên/Người dùng đồng ý rằng Xfinance không bảo đảm rằng ứng
+        dụng X-finance sẽ luôn có sẵn hoặc tại bất kỳ thời điểm cụ thể nào hoặc
+        việc truy cập sẽ liên tục hoặc không bị gián đoạn;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >3. Thành Viên/Người dùng đồng ý rằng Xfinance không phải chịu trách
+        nhiệm cho bất kỳ thiệt hại nào (bao gồm tổn thất, mất cơ hội, lợi nhuận
+        bị mất và chi phí Dịch vụ thay thế) liên quan đến việc sử dụng, không
+        thể sử dụng, gián đoạn hoặc gián đoạn trong việc thiếu quyền truy cập
+        hoặc hoạt động của hoặc phát sinh liên quan đến ứng dụng Xfinance;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >4. Thành Viên/Người dùng thừa nhận rằng sẽ thực hiện đúng hướng dẫn
+        thanh toán của của Xfinance.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Người dùng thừa nhận rằng thông tin nhận dạng không khớp, không chính
+        xác hoặc không đầy đủ như theo hướng dẫn thanh toán của Xfinance có thể
+        dẫn đến việc chuyển khoản của Người dùng bị từ chối và không được ghi
+        nhận số dư có trên tài khoản của Người dùng tại ứng dụng X-finance.
+        Ngoài ra trong trường hợp Người dùng chuyển khoản với nội dung không
+        chính xác dẫn đến Hệ thống phần mềm, ứng dụng của Xfinance ghi nhận số
+        tiền được chuyển đến Tài khoản tiền kinh doanh vào tài khoản của Người
+        dùng khác, thì Công ty không chịu trách nhiệm trong việc thu hồi khoản
+        tiền đã chuyển nhầm;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >5. Người dùng đồng ý rằng, trong trường hợp gây ra bất kỳ thiệt hại nào
+        cho Xfinance, Người dùng sẽ bồi thường, bồi hoàn các chi phí phát sinh
+        từ và/hoặc liên quan đến thiệt hại đã gây ra cho Xfinance;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >6. Công ty có thể cấn trừ khoản phạt, khoản bồi thường, bồi hoàn, phần
+        vốn đầu tư bị phân bổ thừa, phân bổ nhầm vào Tài khoản giao dịch của
+        Người dùng. Hoạt động này bao gồm việc tạm khóa, khóa tài khoản Người
+        dùng để truy thu những khoản phát sinh nêu trên;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >7. Người dùng hiểu, xác nhận và đồng ý rằng các thao tác của mình trên
+        Ứng dụng X-finance có thể cần một thời gian hợp lý và phù hợp để được
+        tiến hành theo quy định pháp luật, theo các quy định, quy trình nội bộ
+        của Xfinance. Và do đó, Người dùng chấp nhận các thông tin, nội dung,
+        giá, phí thay đổi (nếu có) kể từ lúc Người dùng thực hiện thao tác, cho
+        đến lúc thao tác được tiến hành;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >8. Người dùng cho phép Xfinance thu thập, sử dụng, phân tích, chuyển
+        giao cho bên thứ ba là đối tác của Xfinance thông tin cá nhân phù hợp
+        của Người dùng nhằm mục đích phát triển các sản phẩm, tính năng, dịch vụ
+        phục vụ cho lợi ích của Người dùng.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >9. Người dùng hiểu rằng trong quá trình sử dụng dịch vụ, ứng dụng
+        Xfinance. Xfinance sẽ thường xuyên cập nhật cho Người dùng những thông
+        tin liên quan đến Tài khoản Người dùng, sản phẩm, đối tác tài chính
+        thông qua ứng dụng X-finance cũng như gửi email, tin nhắn hoặc cuộc gọi
+        để giải đáp thắc mắc, chăm sóc khách hàng, quảng bá sản phẩm nhằm nâng
+        cao chất lượng dịch vụ và đảm bảo lợi ích tối đa cho Người dùng. Vậy
+        nên, tại đây Người dùng cam kết đồng ý nhận những thông báo, email, tin
+        nhắn, cuộc gọi... (“Thông báo”) từ X-finance và sẽ không có bất kỳ khiếu
+        kiện, khiếu nại nào tới X-finance liên quan đến việc gửi, nhận Thông
+        báo.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">XVI. LIÊN LẠC VỚI X-finance</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Trong quá trình sử dụng các sản phẩm, dịch vụ, giao dịch tài chính
+        thông qua ứng dụng Xfinance, nếu có gặp bất kỳ sự cố hoặc cần tư vấn hỗ
+        trợ, Người dùng tìm câu trả lời cho vấn đề của mình trong mục Các câu
+        hỏi thường gặp. Nếu không tìm được câu hỏi và câu trả lời phù hợp, Người
+        dùng có thể liên hệ với X-finance bằng các cách sau: Gửi yêu cầu hỗ trợ
+        qua ứng dụng X-finance; Chat, nhắn tin inbox qua Fanpage Facebook chính
+        thức của Xfinance; Gọi điện thoại gặp tư vấn viên trực tiếp qua tổng đài
+        của Xfinance số: 024.3367.6699 Gửi email về địa chỉ Email của Xfinance:
+        vnfite.vn@gmail.com</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">XVII. GIẢI QUYẾT TRANH CHẤP</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >1. Bản điều khoản điều kiện này và quan hệ được xác lập giữa X-finance
+        và người dùng chịu sự điều chỉnh của pháp luật Việt Nam. Nếu có bất kỳ
+        vấn đề khiếu nại, tranh chấp phát sinh thì các Bên phải kịp thời thông
+        báo cho nhau biết và tích cực bàn bạc, giải quyết trên cơ sở thương
+        lượng, bình đẳng, hợp tác, các Bên cùng có lợi. Trước tiên, các bên sẽ
+        tự thương lượng, hòa giải để giải quyết tranh chấp. Nếu các Bên không
+        thể tự thương lượng, hòa giải để giải quyết tranh chấp thì sẽ mời bên
+        thứ ba là hòa giải viên thương mại hoặc luật sư để hòa giải tranh chấp
+        phát sinh;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >2. Trong trường hợp các Bên trong tranh chấp không thể giải quyết tranh
+        chấp thông qua thương lượng hòa giải trong vòng 90 ngày kể từ ngày phát
+        sinh tranh chấp thì các Bên đều có quyền đưa tranh chấp ra giải quyết
+        tại Tòa án nhân dân cấp Quận, nơi đặt trụ sở của Xfinance. Các chi phí
+        liên quan đến khiếu kiện (bao gồm chi phí thanh toán cho luật sư) sẽ do
+        bên thua chịu</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">XVIII. SỬA ĐỔI, BỔ SUNG</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Việc sửa đổi Bản điều khoản, điều kiện này thuộc quyền và trách nhiệm
+        của Xfinance. Do đó, Xfinance có quyền sửa đổi Bản điều khoản, điều kiện
+        này vào bất kỳ thời điểm nào và vì bất kỳ lí do nào thông qua việc đăng
+        tải bản sửa đổi lên ứng dụng Xfinance. X-finance sẽ thông báo tới thành
+        viên/người dùng khi có bản cập nhật điều khoản, điều kiện này được đưa
+        lên ứng dụng X-finance. Bản điều khoản điều kiện được sửa đổi chính thức
+        có hiệu lực kể từ thời điểm được đăng tải lên ứng dụng Xfinance. Việc
+        thành viên tiếp tục sử dụng ứng dụng Xfinance sau thời điểm bản điều
+        khoản điều kiện được sửa đổi và đăng tải lên ứng dụng X-finance được
+        hiểu là thành viên chấp thuận các sửa đổi này.</span
+      >
+    </p>
+    <p class="c7" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">CHÍNH SÁCH QUYỀN RIÊNG TƯ</span>
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">1. Mục đích</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Việc ứng dụng Xfinance tiếp cận, thu thập thông tin của thành
+        viên/người dùng (người dùng) là cơ sở để Xfinance có thể cung cấp dịch
+        vụ kết nối thành viên/người dùng với nhau. Xfinance muốn người dùng ứng
+        dụng Xfinance hiểu rằng bất cứ điều gì Xfinance làm đều nhằm hướng tới
+        lợi ích của các bạn (người dùng). Việc xây dựng chính sách quyền riêng
+        tư (chính sách bảo mật thông tin) này cũng nhằm để người dùng hiểu rõ
+        loại thông tin liên quan đến người dùng được Xfinance thu thập, mục đích
+        sử dụng thông tin, cách thức quản lý, lưu trữ thông tin của Xfinance,….
+        Chính sách quyền riêng tư này cũng chính là lời cam kết bảo mật thông
+        tin của X-finance đối với người dùng. Bằng việc sử dụng các dịch vụ của
+        Xfinance cung cấp trên ứng dụng Xfinance, người dùng được cho là đã đọc,
+        hiểu rõ và đồng ý với nội dung của Chính sách bảo mật thông tin này.
+        Đồng thời người dùng cam kết tuân thủ tuyệt đối Chính sách bảo mật thông
+        tin này. Việc sửa đổi, bổ sung chính sách bảo mật thông tin này do
+        Xfinance chủ động thực hiện. Sau khi sửa đổi Chính sách này, Xfinance sẽ
+        đăng tải công khai trên website: www.vnfite.com.vn và ứng dụng Xfinance.
+        Chính sách bảo mật thông tin được sửa đổi sẽ có hiệu lực sau năm (05)
+        ngày kể từ khi được đăng tải công khai trên trên website:
+        www.vnfite.com.vn và ứng dụng Xfinance</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">2. Thông tin được thu thập</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Thông tin người dùng mà Xfinance có thể tiếp cận và/hoặc thu thập bao
+        gồm nhưng không giới hạn:</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">– Họ và tên</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">– Ngày tháng năm sinh</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">– Thông tin giấy CMND/ Căn cước công dân </span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">– Địa chỉ cư trú, nguyên quán</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">– Số điện thoại liên lạc của người dùng </span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">– </span><span class="c21">&#xa0;</span
+      ><span class="c21">Dữ liệu khuôn mặt để xác minh giấy tờ tuỳ thân</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">– Địa chỉ email</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Thông tin về thiết bị điện thoại/máy tính truy cập</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">– Thư viện hình ảnh, video</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">– Vị trí người dùng</span>
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">3. Chính sách bảo mật thông tin</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Khi sử dụng website www.vnfite.com.vn và/hoặc ứng dụng Xfinance, người
+        dùng có nghĩa vụ cung cấp thông tin như nêu trên cho Xfinance, và/hoặc
+        cho phép Xfinance được tiếp cận/thu thập các thông tin này. Xfinance cam
+        kết thực hiện các chính sách bảo vệ thông tin của người dùng như
+        sau:</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">a. Mục đích thu thập thông tin</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Việc thu thập thông tin của người dùng do Xfinance thực hiện nhằm hướng
+        đến các mục đích sau:</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Xác thực người dùng, phân tích yêu cầu của người dùng để chấp thuận
+        cung cấp dịch vụ kết nối và các dịch vụ giá trị gia tăng trên Ứng dụng
+        Xfinance cho người dùng và cho phép người dùng được sử dụng Ứng dụng
+        Xfinance để sử dụng các dịch vụ do Xfinance cung cấp;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Có cơ sở để đánh giá, xếp hạng tín nhiệm của người dùng trước khi cho
+        phép người dùng được thực hiện các giao dịch trên Xfinance;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Cung cấp dịch vụ kết nối người dùng với nhau, tìm kiếm đối tác phát
+        triển mạng lưới kết nối và nâng cao chất lượng dịch vụ cung cấp cho
+        người dùng;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">– Để liên hệ với người dùng khi cần thiết;</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Để phát triển, cải tiến dịch vụ và cung cấp cho người dùng các các
+        chính sách, chương trình hoặc sản phẩm, dịch vụ mới;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Để thực hiện các nghĩa vụ của Xfinance với người dùng theo các thỏa
+        thuận đã xác lập với người dùng;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Để sử dụng Cookies để cải thiện các quy trình, hoạt động quảng cáo,
+        thông báo, xác minh, an toàn và tuân thủ, phân tích và quản lý nhu cầu
+        người dùng của Xfinance;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Để lưu trữ cơ sở dữ liệu phục vụ cho mục đích quản lý nội bộ cũng như
+        để phục vụ việc cung cấp cho các cơ quan nhà nước khi có yêu cầu theo
+        quy định của pháp luật;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Để trả lời các câu hỏi hoặc phản hồi của người dùng về bất kỳ vấn đề
+        nào mà người dùng gặp phải trong quá trình sử dụng ứng dụng X-finance
+        cũng như các dịch vụ khác do Xfinance hoặc đối tác của Xfinance cung
+        cấp;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Để làm lớp phòng vệ đầu tiên ngăn chặn, phòng ngừa các hành vi nhằm
+        lạm dụng việc sử dụng ứng</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >dụng X-finance để thực hiện các hành vi phạm pháp gây thiệt hại cho
+        X-finance, cho những người dùng khác trên ứng dụng X-finance cũng như
+        cho xã hội;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Để phục vụ cho các nghĩa vụ của Xfinance theo quy định của pháp
+        luật.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">b. Phạm vi sử dụng thông tin</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Sau khi thu thập thông tin người dùng, X-finance lưu trữ các thông tin
+        này và cam kết thông tin người dùng chỉ được sử dụng vào các hoạt động
+        phục vụ công việc, bao gồm nhưng không giới hạn các hoạt động sau:</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Cung cấp thông tin cho mạng lưới các thành viên sử dụng Xfinance để
+        họ có thể kết nối với nhau và thực hiện các giao dịch trên
+        Xfinance;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Xfinance sử dụng thông tin cá nhân của người dùng để đánh giá, xếp
+        hạng tín nhiệm của người dùng; phân tích thông tin, nắm bắt được nhu
+        cầu, định hướng phát triển và mục tiêu mà người dùng hướng tới. Qua đó,
+        X-finance cung cấp dịch vụ kết nối phù hợp hơn cho người dùng hoặc đưa
+        ra những ý kiến tư vấn hợp lý cho người dùng trước khi thực hiện các
+        giao dịch trên ứng dụng Xfinance;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Thông tin người dùng được cung cấp cho người quản lý, người lao động
+        của X-finance để các chủ thể này sẽ thay mặt cho Xfinance nắm bắt chi
+        tiết về thông tin của từng người dùng để có những hỗ trợ cần thiết, hiệu
+        quả, kịp thời khi người dùng có yêu cầu;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Xfinance có thể cung cấp thông tin của người dùng cho các đối tác của
+        X-finance như các công ty nghiên cứu thị trường, các cố vấn chuyên
+        môn,…. Việc cung cấp thông tin này hoàn toàn không vì mục đích thương
+        mại hoặc trục lợi mà nhằm cải tiến chất lượng dịch vụ, phát triển sản
+        phẩm dịch vụ mới hoặc nhằm đánh giá, khảo sát tốt hơn về thị trường để
+        sản phẩm dịch vụ của X-finance đáp ứng được nhu cầu của người
+        dùng.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Xfinance sử dụng thông tin của người dùng để cung cấp cho cơ quan nhà
+        nước có thẩm quyền theo quy định của pháp luật</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">c) Thời gian lưu trữ thông tin</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Thời gian lưu trữ thông tin của người dùng: X-finance sẽ lưu trữ thông
+        tin của người dùng trong khoảng thời gian 36 tháng kể từ ngày người dùng
+        đóng tài khoản trên ứng dụng X-finance hoặc trong vòng 60 tháng kể từ
+        ngày người dùng không phát sinh giao dịch trên ứng dụng X-finance.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41"
+        >d) Địa chỉ của đơn vị thu thập và quản lý thông tin người dùng</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">– Công ty Cổ phần Công nghệ Tài chính X-finance</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Trụ sở: Up Coworking Space - Tầng 7, số 1 Lương Yên, phường Bạch
+        Đằng, quận Hai Bà Trưng, Thành phố Hà Nội.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">e) Đối tượng tiếp cận, quản lý thông tin</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Xfinance có quyền cung cấp các thông tin người dùng cho các đối tượng
+        sau trên nguyên tắc chỉ cung cấp thông tin cho những người này nhằm thực
+        hiện các nghĩa vụ của Xfinance đối với các người dùng hoặc nhằm nâng cao
+        chất lượng dịch vụ. Xfinance cam kết sẽ thông báo cho các đối tượng này
+        về nghĩa vụ bảo mật các thông tin của người dùng, bao gồm nhưng không
+        giới hạn các đối tượng sau:</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Người quản lý, người lao động của Công ty X-finance;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Các đối tác của Xfinance, bao gồm các bên Xfinance cộng tác trong các
+        sự kiện, chương trình và hoạt động nhất định;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">– Bên cung cấp dịch vụ quảng cáo;</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Các công ty tổ chức sự kiện và nhà tài trợ sự kiện;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">– Các công ty nghiên cứu thị trường;</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Các bên cung cấp dịch vụ, bao gồm, các nhà cung cấp dịch vụ công nghệ
+        thông tin (CNTT) về cơ sở hạ tầng, phần mềm và cộng tác phát
+        triển;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Các cố vấn chuyên môn và kiểm toán viên bên ngoài, bao gồm cố vấn
+        pháp lý, cố vấn tài chính và chuyên gia tư vấn;</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >– Các cơ quan nhà nước để tuân thủ các quy định của pháp luật và yêu
+        cầu của cơ quan nhà nước.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">f) Chỉnh sửa thông tin người dùng</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Người dùng được quyền chủ động cập nhật, sửa đổi thông tin của mình
+        thông qua ứng dụng Xfinance.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">g) Chủ thể người dùng không phù hợp</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Xfinance chỉ cung cấp dịch vụ cho công dân Việt Nam từ đủ 18 tuổi trở
+        lên, trong phạm vi lãnh thổ Việt Nam. Vì vậy, các thông tin người dùng
+        không phải là công dân Việt Nam và/hoặc dưới 18 tuổi sẽ không được xử lý
+        bởi X-finance hoặc điều chỉnh bởi chính sách bảo mật thông tin người
+        dùng này. Người dùng phải tự chịu trách nhiệm về việc cung cấp các thông
+        tin cá nhân nêu trên.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">h) Về việc liên kết với các website khác</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Người dùng chịu trách nhiệm bảo vệ thông tin tài khoản, mật khẩu đăng
+        nhập của mình trên ứng dụng Xfinance. Đồng thời, Xfinance khuyến cáo
+        người dùng không cung cấp bất kỳ thông tin nào liên quan đến tài khoản
+        và mật khẩu của mình trên ứng dụng X-finance cho các website, ứng dụng,
+        sàn thương mại điện tử khác. Xfinance không chịu trách nhiệm trong
+        trường hợp người dùng truy cập vào các website hoặc liên kết không chính
+        thức của Xfinance. Trong trường hợp người dùng tiết lộ thông tin, dữ
+        liệu của mình cho các website hoặc liên kết này thì người dùng hoàn toàn
+        chịu trách nhiệm về hành động tiết lộ thông tin, dữ liệu của mình cũng
+        như việc tuân thủ chính sách bảo mật tại các website đó.</span
+      >
+    </p>
+    <p class="c1" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c41">i) Sử dụng Cookie</span>
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21"
+        >Xfinance có thể thu thập thông tin người dùng thông qua các tập tin
+        cookie để nhằm nắm bắt rõ hơn nhu cầu, xu hướng phát triển của người
+        dùng để có thể cung cấp các dịch vụ tốt hơn cho người dùng. Trong trường
+        hợp người dùng không muốn các tập tin cookies trên website của Xfinance
+        thu thập các thông tin người dùng, người dùng có thể tắt cookies bằng
+        cách điều chỉnh cài đặt trình duyệt internet của người dùng để vô hiệu
+        hóa, khóa hoặc tắt cookies, bằng cách xóa lịch sử truy cập của người
+        dùng hoặc xóa bộ nhớ cache khỏi trình duyệt internet của người
+        dùng.</span
+      >
+    </p>
+    <p class="c3" style="margin-top: 0pt; margin-bottom: 0pt; font-size: 11pt">
+      <span class="c21">Điều khoản này có hiệu lực từ ngày: 01/01/2023</span>
+    </p>
+    <p style="bottom: 10px; right: 10px; position: absolute">
+      <a
+        href="https://wordtohtml.net"
+        target="_blank"
+        style="font-size: 11px; color: #d0d0d0"
+        >Converted to HTML with WordToHTML.net</a
+      >
+    </p>
+  </body>
+</html>

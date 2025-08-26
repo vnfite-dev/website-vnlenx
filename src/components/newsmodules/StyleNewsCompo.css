@@ -1,0 +1,349 @@
+.txt-header {
+    color: #374151;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.feature-view {
+    width: 100vw;
+    padding-left: 9.5vw;
+    padding-right: 9.5vw;
+    height: 600px;
+    margin-top: 40px;
+}
+
+.view-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 16px;
+    align-items: stretch;
+    margin-top: 32px;
+}
+
+.view-left {
+    width: 60%;
+    position: relative;
+    max-height: 512px;
+}
+
+.image-left {
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/contact1.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-left {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.view-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sub-content-right {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+	height: 100%;
+}
+
+.view-sub-left-txt-content {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding:12px;
+}
+
+.sub-left-txt-content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding-right: 24px;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    border-radius: 8px;
+    width: 100%;
+    padding:12px;
+}
+
+.txt-left-feature-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.sub-txt-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 28px;
+    height: 100%;
+}
+
+.txt-feature-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #374151;
+  
+}
+
+.view-date-feature-content {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.txt-time-left {
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.txt-time {
+    font-weight: 400;
+    color: #4B5563;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.img {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 2700px) {
+    .feature-view {
+        padding-right: 15vw;
+        padding-left: 15vw;
+    }
+    .image-left {
+        height: 400px;
+        background-size: cover;
+    }
+
+
+    .img {
+        object-fit: cover;
+    }
+
+    .txt-header {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .txt-feature-header {
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* Limit to 2 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
+
+    .txt-time {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .view-left {
+        height: auto;
+        width: 60%;
+    }
+
+    .view-right {
+        height: auto;
+        width: 40%;
+    }
+
+    .sub-txt-content {
+        gap: 16px;
+    }
+
+    .txt-left-feature-header {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+    .feature-view {
+        height: auto;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .image-left {
+        height: 400px;
+        background-size: cover;
+    }
+
+    .img {
+        object-fit: cover;
+    }
+
+    .txt-header {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .txt-feature-header {
+        font-size: 16px;
+        line-height: 24px;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* Limit to 2 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
+
+    .txt-time {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .view-left {
+        height: auto;
+        width: 60%;
+    }
+
+    .view-right {
+        height: auto;
+        width: 40%;
+    }
+
+    .sub-txt-content {
+        gap: 16px;
+    }
+
+    .txt-left-feature-header {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+}
+
+@media screen and (max-width: 870px) {
+    .feature-view {
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .image-left {
+        height: 400px;
+        background-size: cover;
+    }
+
+    .img-left {
+        aspect-ratio: 1;
+        max-height: 512px;
+    }
+
+    .img {
+        width: 180px;
+        height: 130px;
+        object-fit: cover;
+    }
+
+    .txt-header {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .txt-feature-header {
+        font-size: 10px;
+        line-height: 15px;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* Giới hạn 3 dòng */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .txt-time {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .view-left {
+        width: 100%;
+        height: auto;
+    }
+
+    .view-right {
+        height: auto;
+        display: flex;
+        overflow-x: auto; /* Cho phép cuộn ngang */
+        gap: 16px;
+        padding-bottom: 10px; /* Để tránh ảnh hưởng đến cuộn */
+        scroll-snap-type: x mandatory;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sub-txt-content {
+        gap: 16px;  
+        height: 100px;
+    }
+
+    .view-content {
+        flex-direction: column;
+        flex:1
+    }
+
+    .txt-left-feature-header {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .sub-left-txt-content {
+        bottom: 8;
+        left: 16;
+        padding-right: 16px;
+        gap: 16px;
+    }
+
+    .img-time-left{
+        width: 16px;
+        height: 16px;
+    }
+
+    .txt-time-left {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .img {
+        width: 130px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .img-time{
+        width: 16px;
+        height: 16px;
+    }
+}

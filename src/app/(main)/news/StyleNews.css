@@ -1,0 +1,15 @@
+/* styles.css */
+.news-header {
+	margin-left: 9.5vw;
+	color:#374151;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .news-header {
+        margin-left: 20px;
+    }
+}

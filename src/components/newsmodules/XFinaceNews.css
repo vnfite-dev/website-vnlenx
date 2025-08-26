@@ -1,0 +1,155 @@
+.view-container {
+  width: 100vw;
+  padding-left: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-top: 64px;
+  padding-bottom: 40px;
+  height: 512px;
+}
+
+.txt-header {
+  color: #374151;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto; /* Cho phép cuộn ngang */
+  padding-bottom: 10px;
+  margin-top: 32px;
+  overflow-y: auto;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 6px; /* Thay đổi chiều cao thanh cuộn ngang */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.item {
+  margin-right: 20px;
+  flex-shrink: 0;
+  text-align: center;
+  position: relative;
+  height: auto;
+}
+
+.item img {
+  width: 25vw; /* Mỗi bức ảnh chiếm 25% chiều rộng màn hình */
+  height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
+  object-fit: cover;
+  border-radius: 8px;
+  aspect-ratio: 3 / 4;
+  max-height: 390px; 
+  /* max-width: 292px; */
+}
+
+.item iframe {
+  width: 25vw; /* Mỗi bức ảnh chiếm 25% chiều rộng màn hình */
+  height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
+  object-fit: cover;
+  border-radius: 8px;
+  aspect-ratio: 3 / 4;
+  max-height: 390px; 
+  min-width: 200px;
+}
+
+.item .text-overlay {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.item .view-overlay {
+  position: absolute; 
+  left: 16px; 
+  bottom: 24px; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  padding-right: 16px;
+}
+
+.item  .view-overlay .view-text-overlay {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.item  .view-overlay .txt-header-overlay {
+  font-weight: 700;
+  font-size: 18px ;
+  line-height: 27px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  text-align: left;
+}
+
+.item .view-text-overlay .time-icon {
+  width: 16px;
+  height: 16px;
+  color: red;
+}
+
+.item p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .item iframe {
+    width: 30vw; /* Tăng kích thước ảnh lên 30% khi màn hình nhỏ hơn 1200px */
+  }
+  .item  .view-overlay .txt-header-overlay {
+    font-size: 14px ;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .item iframe {
+    width: 45vw; /* Tăng kích thước ảnh lên 45% khi màn hình nhỏ hơn 768px */
+  }
+  .item  .view-overlay .txt-header-overlay {
+    font-size: 12px ;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .item iframe {
+    width: 90vw; /* Tăng kích thước ảnh lên 80% khi màn hình nhỏ hơn 480px */
+  }
+  .item  .view-overlay .txt-header-overlay {
+    font-size: 10px ;
+    line-height: 10px;
+  }
+}
