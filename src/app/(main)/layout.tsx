@@ -10,11 +10,11 @@ import Footer from "@/components/molecules/Footer";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | X-Finance",
-    default: "X-Finance - Nền tảng cho vay có thế chấp của VNFITE",
-    absolute: "X-Finance - Nền tảng cho vay có thế chấp của VNFITE",
+    template: "%s | Vnlendx",
+    default: "Vnlendx - Nền tảng cho vay có thế chấp của VNFITE",
+    absolute: "Vnlendx - Nền tảng cho vay có thế chấp của VNFITE",
   },
-  description: "X-Finance - Sản phẩm cho vay có thế chấp của VNFITE",
+  description: "Vnlendx - Sản phẩm cho vay có thế chấp của VNFITE",
   // icons: {
   //   icon: "/logo.svg",
   // }
@@ -33,24 +33,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <Head>
-        <meta name="robots" content="index, follow"></meta>
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="img-src https: data:; upgrade-insecure-requests"
-        />
-      </Head>
-      <body className={`${inter.className} relative`}>
-        <div className="fixed bottom-0 right-0 z-50">
-          <MessengerChatButton />
-          <ZaloChatWidget />
-        </div>
+    <div className={`${inter.className} relative`}>
+      {/* <div className="fixed bottom-0 right-0 z-50">
+        <MessengerChatButton />
+        <ZaloChatWidget />
+      </div> */}
 
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
+      <Header />
+      {children}
+      <Footer />
+    </div>
   );
 }

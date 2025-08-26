@@ -6,11 +6,13 @@ import { Metadata } from "next";
 import Header from "@/components/molecules/Header";
 import { Inter } from "next/font/google";
 import Footer from "@/components/molecules/Footer";
+import MessengerChatButton from "@/components/plugin/MessengerWidget";
+import ZaloChatWidget from "@/components/plugin/ZaloChatWidget";
 
 export const metadata: Metadata = {
-  title: "Trang chủ | X-Finance",
+  title: "Trang chủ | Vnlendx",
   description:
-    "Trang chủ của X-Finance - Nền tảng cho vay có thế chấp của VNFITE",
+    "Trang chủ của Vnlendx - Nền tảng cho vay có thế chấp của VNFITE",
 };
 const inter = Inter({
   subsets: ["latin"],
@@ -22,6 +24,10 @@ export default function Home() {
   return (
     <>
       <div className={`${inter.className} relative`}>
+        {/* <div className="fixed bottom-0 right-0 z-50">
+          <MessengerChatButton />
+          <ZaloChatWidget />
+        </div> */}
         <Header />
       </div>
       <div className="flex flex-col items-center justify-center w-full mx-auto mb-32">
