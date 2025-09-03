@@ -36,12 +36,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
+          <meta name="google-site-verification" content="A0OziPB9p5d3LOMxcp-ilpus5o0LufqYhBZsQ3oo4Ps" />
         <meta name="robots" content="index, follow"></meta>
         <meta
           httpEquiv="Content-Security-Policy"
           content="img-src https: data:; upgrade-insecure-requests"
         />
-        <meta name="google-site-verification" content="A0OziPB9p5d3LOMxcp-ilpus5o0LufqYhBZsQ3oo4Ps" />
       </Head>
       <body className={`${inter.className} relative`}>
         <div className="fixed bottom-0 right-0 z-50">
