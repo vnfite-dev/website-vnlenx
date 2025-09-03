@@ -5,7 +5,7 @@ import {
   CarIcon,
   MotobikeIcon,
   RedbookIcon,
-} from "../../../../public/icons/DynamicIcon";
+} from "../../../public/icons/DynamicIcon";
 import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
 import InputCustom from "@/components/molecules/InputCustom";
@@ -94,9 +94,7 @@ export default function ServiceRegister() {
     icon: "", // Initialize with an empty string
     description: "Vui lòng chọn loại dịch vụ để tiếp tục.",
   });
-  const [selectedOptionShop, setSelectedOptionShop] = useState<string | number>(
-    ""
-  );
+  const [selectedOptionShop, setSelectedOptionShop] = useState<string | number>("");
   const [moneyList, setMoneyList] = useState<number>(5000000);
   const [termList, setTermList] = useState<number>(3);
   const [monthlyPayment, setMonthlyPayment] = useState<number>(0);
@@ -112,12 +110,9 @@ export default function ServiceRegister() {
   const validateForm = () => {
     const newErrors: Partial<Info> = {};
 
-    if (!info.phoneNumber)
-      newErrors.phoneNumber = "Số điện thoại không được để trống.";
-    else if (info.phoneNumber.length !== 10)
-      newErrors.phoneNumber = "Số điện thoại không đúng định dạng.";
-    else if (!/^\d{10}$/.test(info.phoneNumber))
-      newErrors.phoneNumber = "Số điện thoại chỉ được chứa chữ số.";
+    if (!info.phoneNumber) newErrors.phoneNumber = "Số điện thoại không được để trống.";
+    else if (info.phoneNumber.length !== 10) newErrors.phoneNumber = "Số điện thoại không đúng định dạng.";
+    else if (!/^\d{10}$/.test(info.phoneNumber)) newErrors.phoneNumber = "Số điện thoại chỉ được chứa chữ số.";
 
     if (!info.commune) newErrors.commune = "Phường/xã không được để trống.";
     if (!info.city) newErrors.city = "Thành phố không được để trống.";
@@ -132,14 +127,11 @@ export default function ServiceRegister() {
     setInfo({ ...info, ["shop"]: value });
     setErrors((prevErrors) => ({
       ...prevErrors,
-      ["shop"]: "", // Clear the error for this specific field
+      ["shop"]: "" // Clear the error for this specific field
     }));
   };
 
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement>,
-    field: keyof Info
-  ) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>, field: keyof Info) => {
     let value = e.target.value;
 
     // If the field is phoneNumber, ensure only numeric input is allowed
@@ -152,9 +144,10 @@ export default function ServiceRegister() {
     // Clear the error for this specific field when user starts typing
     setErrors((prevErrors) => ({
       ...prevErrors,
-      [field]: "", // Clear the error for this specific field
+      [field]: "" // Clear the error for this specific field
     }));
   };
+
 
   useEffect(() => {
     setIsClient(true); // Set to true after the component mounts
@@ -170,7 +163,7 @@ export default function ServiceRegister() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (validateForm()) {
-      window.history.pushState({}, "", "/notification");
+      window.history.pushState({}, '', '/notification');
       window.location.reload();
     }
   };
@@ -185,9 +178,7 @@ export default function ServiceRegister() {
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col sm:flex-row gap-x-6">
           <div className="w-full sm:w-1/2 px-4 sm:px-0">
-            <p className="text-[16px] md:text-xl font-bold mb-4">
-              Loại dịch vụ
-            </p>
+            <p className="text-[16px] md:text-xl font-bold mb-4">Loại dịch vụ</p>
             <Select
               onValueChange={(value) => {
                 const selected = LoanPackageOptions.find(
@@ -261,9 +252,7 @@ export default function ServiceRegister() {
             </div>
           </div>
           <div className="w-full sm:w-1/2 flex flex-col items-center justify-center mt-14 sm:mt-0 rounded-xl shadow-md">
-            <p className="text-lg md:text-xl font-bold">
-              Số tiền trả hằng tháng
-            </p>
+            <p className="text-lg md:text-xl font-bold">Số tiền trả hằng tháng</p>
             <p className="text-sm md:text-lg italic text-muted-foreground mb-4 sm:mb-10">
               (Số tiền dự tính tham khảo)
             </p>
@@ -330,7 +319,7 @@ export default function ServiceRegister() {
             </Link>{" "}
             và{" "}
             <Link href="/" target="_blank" className="text-[#3B82F6]">
-              Điều khoản của Vnlendx
+              Điều khoản của X-Finance
             </Link>
           </p>
 

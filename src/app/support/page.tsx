@@ -10,7 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "Hỗ trợ",
   description:
-    "Hỗ trợ khách hàng trong việc sử dụng sản phẩm vay có thế chấp - Vnlendx",
+    "Hỗ trợ khách hàng trong việc sử dụng sản phẩm vay có thế chấp - X-Finance",
 };
 
 const questionList = [
@@ -64,13 +64,9 @@ export default function SupportPage() {
           >
             {questionList.map((item, index) => (
               <AccordionItem key={index} value={`item-${index + 2}`}>
-                <AccordionTrigger className="text-sm md:text-[16px] lg:text-lg">
-                  {item.question}
-                </AccordionTrigger>
+                <AccordionTrigger className="text-sm md:text-[16px] lg:text-lg">{item.question}</AccordionTrigger>
                 <AccordionContent className="flex flex-col gap-4">
-                  <p className="text-sm md:text-[16px] lg:text-lg">
-                    {item.answer}
-                  </p>
+                  <p className="text-sm md:text-[16px] lg:text-lg">{item.answer}</p>
                 </AccordionContent>
               </AccordionItem>
             ))}
