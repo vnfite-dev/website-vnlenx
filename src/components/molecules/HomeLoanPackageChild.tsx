@@ -24,7 +24,7 @@ export default function HomeLoanPackageChild() {
     <div className="max-w-[700px] mx-auto">
       <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-8 sm:leading-14 text-center">
         Các gói vay online của{" "}
-        <span className="text-main-color">X-Finance</span>
+        <span className="text-main-color">VNLENDX</span>
       </p>
       <div className="grid grid-cols-2 md:grid-cols-4 mt-4 md:mt-8">
         {loanPackagesList.map((item, index) => (

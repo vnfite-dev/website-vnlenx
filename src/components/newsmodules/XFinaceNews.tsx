@@ -89,7 +89,7 @@ export default function XFinaceNews() {
     return (
         <header suppressHydrationWarning={false}>
             <div className='view-container'>
-                <div className="txt-header"><span style={{ color: '#FF4142' }}>X-Finance</span> và khách hàng</div>
+                <div className="txt-header"><span style={{ color: '#FF4142' }}>VNLENDX</span> và khách hàng</div>
                 <div className='scroll-container'>
                     {youtubeLinkList.slice(0, visibleCount).map((item, index) => (
                         <VideoItem key={index} item={item} />

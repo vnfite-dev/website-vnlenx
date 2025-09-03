@@ -5,13 +5,13 @@ import Image from "next/image";
 
 export const metadata = {
   title: "Dịch vụ",
-  description: "Dịch vụ cho vay thế chấp - X-Finance",
+  description: "Dịch vụ cho vay thế chấp - VNLENDX",
 };
 
 const procedureList = [
     "Đăng ký thông tin tư vấn",
     "Tư vấn qua điện thoại trong vòng 15 phút",
-    "Đến PGD của X-Finance thẩm định tài sản và giải ngân nhanh chóng bằng tiền mặt hoặc chuyển khoản"
+    "Đến PGD của VNLENDX thẩm định tài sản và giải ngân nhanh chóng bằng tiền mặt hoặc chuyển khoản"
 ];
 
 const prepareList = [

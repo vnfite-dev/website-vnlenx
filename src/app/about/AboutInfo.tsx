@@ -50,11 +50,11 @@ export default function AboutInfo() {
       </div>
       <div className="w-full sm:w-[40%] flex flex-col  items-end justify-center gap-4">
         <p className="text-justify text-sm sm:text-xs md:text-sm lg:text-lg">
-          X-Finance là ứng dụng cho vay thế chấp tiên phong được phát triển bởi
+          VNLENDX là ứng dụng cho vay thế chấp tiên phong được phát triển bởi
           Công ty Cổ phần Công nghệ Tài chính VNFITE, với sứ mệnh mang đến giải
           pháp tài chính nhanh chóng, an toàn và minh bạch cho người Việt. Trong
           bối cảnh nhu cầu vay vốn để phục vụ tiêu dùng, kinh doanh ngày càng
-          gia tăng, X-Finance ra đời nhằm rút ngắn quy trình vay vốn, loại bỏ
+          gia tăng, VNLENDX ra đời nhằm rút ngắn quy trình vay vốn, loại bỏ
           nhiều thủ tục phức tạp truyền thống, tạo điều kiện thuận lợi để khách
           hàng tiếp cận nguồn vốn kịp thời.
         </p>

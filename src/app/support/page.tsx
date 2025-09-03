@@ -10,7 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "Hỗ trợ",
   description:
-    "Hỗ trợ khách hàng trong việc sử dụng sản phẩm vay có thế chấp - X-Finance",
+    "Hỗ trợ khách hàng trong việc sử dụng sản phẩm vay có thế chấp - VNLENDX",
 };
 
 const questionList = [

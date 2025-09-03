@@ -5,8 +5,8 @@ import HomePartner from "@/components/molecules/HomePartner";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Trang chủ | X-Finance",
-  description: "Trang chủ của X-Finance - Nền tảng cho vay có thế chấp của VNFITE",
+  title: "Trang chủ | VNLENDX",
+  description: "Trang chủ của VNLENDX - Nền tảng cho vay có thế chấp của VNFITE",
 }
 
 export default function Home() {

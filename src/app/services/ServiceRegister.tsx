@@ -319,7 +319,7 @@ export default function ServiceRegister() {
             </Link>{" "}
             và{" "}
             <Link href="/" target="_blank" className="text-[#3B82F6]">
-              Điều khoản của X-Finance
+              Điều khoản của VNLENDX
             </Link>
           </p>
 

@@ -18,7 +18,7 @@ export default function FeatureNews() {
                          <div className='view-sub-left-txt-content'>
                          <div className='sub-left-txt-content'>
                             <div className='txt-left-feature-header'>
-                                Chiều 10/12/2025 tại Hội Nghị quốc tế HYGH, X-Finance hợp tác với tập đoàn ABC đánh dấu bước ngoặt trong ngành ABC song
+                                Chiều 10/12/2025 tại Hội Nghị quốc tế HYGH, VNLENDX hợp tác với tập đoàn ABC đánh dấu bước ngoặt trong ngành ABC song
                             </div>
                             <div className='view-date-feature-content'>
                                 <Image
@@ -45,7 +45,7 @@ export default function FeatureNews() {
                             />
                             <div className='sub-txt-content'>
                                 <div className='txt-feature-header'>
-                                    Chiều 10/12/2025 tại Hội Nghị quốc tế HYGH, X-Finance hợp tác với tập đoàn ABC đánh dấu bước ngoặt trong ngành ABC song
+                                    Chiều 10/12/2025 tại Hội Nghị quốc tế HYGH, VNLENDX hợp tác với tập đoàn ABC đánh dấu bước ngoặt trong ngành ABC song
                                 </div>
                                 <div className='view-date-feature-content'>
                                     <Image
@@ -69,7 +69,7 @@ export default function FeatureNews() {
                             />
                             <div className='sub-txt-content'>
                                 <div className='txt-feature-header'>
-                                    Chiều 10/12/2025 tại Hội Nghị quốc tế HYGH, X-Finance hợp tác với tập đoàn ABC đánh dấu bước ngoặt trong ngành ABC song
+                                    Chiều 10/12/2025 tại Hội Nghị quốc tế HYGH, VNLENDX hợp tác với tập đoàn ABC đánh dấu bước ngoặt trong ngành ABC song
                                 </div>
                                 <div className='view-date-feature-content'>
                                     <Image
@@ -93,7 +93,7 @@ export default function FeatureNews() {
                             />
                             <div className='sub-txt-content'>
                                 <div className='txt-feature-header'>
-                                    Chiều 10/12/2025 tại Hội Nghị quốc tế HYGH, X-Finance hợp tác với tập đoàn ABC đánh dấu bước ngoặt trong ngành ABC song
+                                    Chiều 10/12/2025 tại Hội Nghị quốc tế HYGH, VNLENDX hợp tác với tập đoàn ABC đánh dấu bước ngoặt trong ngành ABC song
                                 </div>
                                 <div className='view-date-feature-content'>
                                     <Image

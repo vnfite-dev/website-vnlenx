@@ -6,7 +6,7 @@ export default function HomeTitle() {
     <div className="w-full bg-[url('/images/home/bgPhone.png')] bg-cover bg-no-repeat bg-center h-[400px] sm:h-[500px] md:h-[731px] mt-0">
       <div className="w-full flex flex-col items-center justify-center mt-4 md:mt-10 mb-4 pt-0 md:pt-10 px-6">
         <h1 className="text-lg sm:text-3xl md:text-5xl font-bold text-center leading-2 sm:leading-6 md:leading-14 text-white mb-4">
-          X-FINANCE
+          VNLENDX
         </h1>
         <h1 className="text-lg sm:text-3xl md:text-5xl font-bold text-center leading-2 sm:leading-6 md:leading-14 text-white mb-4">
           “Vay chất, sống thật”
