@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
-import LayoutShell from "@/components/layout/LayoutShell";
 import MessengerChatButton from "@/components/plugin/MessengerWidget";
 import ZaloChatWidget from "@/components/plugin/ZaloChatWidget";
 import Header from "@/components/molecules/Header";
+// import HeaderImageLayout from "@/components/molecules/HeaderImageLayout";
 import Footer from "@/components/molecules/Footer";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Vnlendx",
-    default: "Vnlendx - Nền tảng cho vay có thế chấp của VNFITE",
-    absolute: "Vnlendx - Nền tảng cho vay có thế chấp của VNFITE",
+    template: "%s | X-Finance",
+    default: "X-Finance - Nền tảng cho vay có thế chấp của VNFITE",
+    absolute: "X-Finance - Nền tảng cho vay có thế chấp của VNFITE",
   },
-  description: "Vnlendx - Sản phẩm cho vay có thế chấp của VNFITE",
+  description: "X-Finance - Sản phẩm cho vay có thế chấp của VNFITE",
   // icons: {
   //   icon: "/logo.svg",
   // }
@@ -26,6 +26,7 @@ const inter = Inter({
   variable: "--font-inter",
   weight: ["300", "400", "500", "600", "700"],
 });
+
 
 export default function RootLayout({
   children,
@@ -43,12 +44,13 @@ export default function RootLayout({
       </Head>
       <body className={`${inter.className} relative`}>
         <div className="fixed bottom-0 right-0 z-50">
-          <MessengerChatButton />
-          <ZaloChatWidget />
-        </div>
-
+						<MessengerChatButton />
+						<ZaloChatWidget />
+					</div>
+        <Header />
+      
         {children}
-        {/* <Footer />   */}
+        <Footer />
       </body>
     </html>
   );

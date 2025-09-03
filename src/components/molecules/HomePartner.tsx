@@ -4,7 +4,7 @@ export default function HomePartner() {
   return (
     <div className="w-full">
       <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center mt-12">
-        Một số đối tác của <span className="text-main-color">Vnlendx</span>
+        Một số đối tác của <span className="text-main-color">X-Finance</span>
       </p>
       <div className="w-full flex flex-wrap items-center justify-center mt-4 sm:mt-8">
         {Array.from({ length: 6 }).map((_, index) => (

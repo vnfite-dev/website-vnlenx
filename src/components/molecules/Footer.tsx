@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="w-full bg-main-color text-white py-6 sm:py-10 lg:py-14 px-4 sm:px-8 lg:px-12">
       <div className="max-w-[1280px] w-full mx-auto flex flex-col lg:flex-row items-start justify-between">
         <div className="flex flex-col gap-2 lg:gap-8 lg:w-[25%] xl:w-[30%]">
-          <p className="font-bold text-4xl leading-14 uppercase">Vnlendx</p>
+          <p className="font-bold text-4xl leading-14 uppercase">X-FINANCE</p>
           <div className="font-light text-md text-justify">
             Chúng tôi tự hào nhà cung cấp các khoản vay nhanh chóng, linh hoạt,
             sử dụng tài sản đảm bảo để hỗ trợ khách hàng giải quyết nhu cầu tài
@@ -23,9 +23,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex flex-col gap-1 lg:gap-2">
-            <p className="font-bold text-xl leading-7 mb-0 sm:mb-2">
-              Giờ làm việc
-            </p>
+            <p className="font-bold text-xl leading-7 mb-0 sm:mb-2">Giờ làm việc</p>
             <p className="font-light text-md leading-6">
               Thứ 2 đến thứ 6: 8.00am - 5.00pm
             </p>
@@ -38,9 +36,7 @@ export default function Footer() {
 
         <div className="w-full lg:w-[40%] xl:w-[30%]">
           <div>
-            <p className="font-bold text-xl leading-7 mb-2 sm:mb-4">
-              Cài đặt Ứng dụng
-            </p>
+            <p className="font-bold text-xl leading-7 mb-2 sm:mb-4">Cài đặt Ứng dụng</p>
             <p className="font-light text-md leading-6">
               Từ App Store hoặc Google Play
             </p>

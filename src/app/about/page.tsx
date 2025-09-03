@@ -1,5 +1,5 @@
-import AboutInfo from "./AboutInfo";
-import YoutubeShort from "./YoutubeShort";
+import AboutInfo from "@/app/about/AboutInfo";
+import YoutubeShort from "@/app/about/YoutubeShort";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Metadata } from "next";
@@ -8,7 +8,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Giới thiệu",
   description:
-    "Giới thiệu về Vnlendx - Nền tảng cho vay có thế chấp của VNFITE",
+    "Giới thiệu về X-Finance - Nền tảng cho vay có thế chấp của VNFITE",
 };
 
 const aboutList = [
@@ -33,7 +33,7 @@ export default function AboutPage() {
       <div className="w-full flex flex-row items-center justify-between px-8 mt-4 sm:mt-10 mb-6 gap-4">
         <div>
           <p className="font-bold text-xl sm:text-3xl lg:text-5xl leading-8 sm:leading-10 lg:leading-16 text-main-color">
-            Vnlendx
+            X-FINANCE
           </p>
           <p className="font-bold text-xl sm:text-3xl lg:text-5xl leading-8 sm:leading-10 lg:leading-16 text-[#1F2937]">{`“Vay chất, sống thật”`}</p>
           {aboutList.map((item, index) => (
@@ -86,7 +86,7 @@ export default function AboutPage() {
 
       <div className="w-full">
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center mt-4 sm:mt-8 lg:mt-12">
-          Giới thiệu về <span className="text-main-color">Vnlendx</span>
+          Giới thiệu về <span className="text-main-color">X-Finance</span>
         </p>
         <AboutInfo />
       </div>
@@ -94,7 +94,7 @@ export default function AboutPage() {
       <div className="w-full p-4">
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center mt-4 sm:mt-8 lg:mt-12">
           Tầm nhìn và sứ mệnh của{" "}
-          <span className="text-main-color">Vnlendx</span>
+          <span className="text-main-color">X-Finance</span>
         </p>
         <p className="text-sm sm:text-[16px] md:text-lg lg:text-xl my-4 md:my-10 text-center">
           Là sợi dây kết nối giữa nhà đầu tư và nhà huy động, tạo ra sân chơi an
@@ -129,7 +129,8 @@ export default function AboutPage() {
 
       <div className="bg-red w-full">
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center mt-4 sm:mt-8 lg:mt-12">
-          Khám phá về <span className="text-main-color">Vnlendx</span>
+          Khám phá về{" "}
+          <span className="text-main-color">X-Finance</span>
         </p>
         <YoutubeShort />
       </div>

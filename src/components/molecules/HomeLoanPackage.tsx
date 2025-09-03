@@ -5,45 +5,41 @@ import Image from "next/image";
 const commentList = [
   {
     name: "Nguyễn Kim Ngọc",
-    comment:
-      "Dịch vụ xử lý nhanh, không mất quá nhiều thời gian. Lần đầu vay online mà thấy dễ dàng và uy tín như vậy. Rất đáng tin cậy! Tôi rất hài lòng về Vnlendx.",
+    comment: "Dịch vụ xử lý nhanh, không mất quá nhiều thời gian. Lần đầu vay online mà thấy dễ dàng và uy tín như vậy. Rất đáng tin cậy! Tôi rất hài lòng về X-Finance.",
     avatar: "/images/home/p1.png",
-    position: "Nhân viên văn phòng",
+    position: "Nhân viên văn phòng"
   },
   {
     name: "Đoàn Văn Mạnh",
-    comment:
-      "App vay nhanh, thủ tục đơn giản, giải ngân cực kỳ nhanh chóng. Rất hài lòng!",
+    comment: "App vay nhanh, thủ tục đơn giản, giải ngân cực kỳ nhanh chóng. Rất hài lòng!",
     avatar: "/images/home/p2.png",
-    position: "Giám đốc kinh doanh",
+    position: "Giám đốc kinh doanh"
   },
   {
     name: "Ngô Kiều Oanh",
-    comment:
-      "Giải ngân nhanh hơn cả tưởng tượng. Cứu cánh kịp thời lúc cần thiết. Dịch vụ khách hàng thân thiện, hỗ trợ tận tình 24/7. Vote 5 sao!",
+    comment: "Giải ngân nhanh hơn cả tưởng tượng. Cứu cánh kịp thời lúc cần thiết. Dịch vụ khách hàng thân thiện, hỗ trợ tận tình 24/7. Vote 5 sao!",
     avatar: "/images/home/p3.png",
-    position: "Nội trợ",
+    position: "Nội trợ"
   },
   {
     name: "Cao Thanh Lâm",
-    comment:
-      "Hỗ trợ nhiệt tình, app dễ dùng, tiền về chỉ trong vài phút. Rõ ràng, minh bạch, không phát sinh phí linh tinh. Rất an tâm khi sử dụng.",
+    comment: "Hỗ trợ nhiệt tình, app dễ dùng, tiền về chỉ trong vài phút. Rõ ràng, minh bạch, không phát sinh phí linh tinh. Rất an tâm khi sử dụng.",
     avatar: "/images/home/p4.png",
-    position: "Nhân viên văn phòng",
-  },
+    position: "Nhân viên văn phòng"
+  }
 ];
 
 export default function HomeLoanPackage() {
   return (
     <div className="w-full mx-auto flex flex-col items-center justify-center">
       <HomeLoanPackageChild />
-
+      
       <div className="mt-10 w-full">
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center">
           Bạn đang gặp khó khăn về tài chính{" "}
         </p>
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center">
-          <span className="text-main-color">Vnlendx</span> sẽ giúp bạn
+          <span className="text-main-color">X-Finance</span> sẽ giúp bạn
         </p>
         <div className="bg-main-color w-full relative mt-6 sm:mt-14 md:mt-20 h-[260px] sm:h-[300px] md:h-[500px] lg:h-[600px]">
           <div className="mt-20 absolute -top-[100px] sm:-top-[200px] right-3/5 sm:right-1/2">
@@ -55,12 +51,10 @@ export default function HomeLoanPackage() {
             />
           </div>
           <div className="text-white text-justify font-light max-w-[500px] absolute left-2/5 sm:left-1/2 top-1/12 px-6">
-            <p className="font-bold text-sm sm:text-lg md:text-xl lg:text-2xl mb-6 text-start">
-              Giới thiệu về Vnlendx
-            </p>
-            <p className="hidden md:block mb-6 text-sm lg:text-[16px]">{`"Vnlendx là ứng dụng tài chính hiện đại, chuyên cung cấp dịch vụ vay vốn thế chấp tài sản một cách nhanh chóng, minh bạch và an toàn. Với quy trình xét duyệt đơn giản, giải ngân linh hoạt và lãi suất cạnh tranh, Vnlendx mang đến giải pháp tài chính hiệu quả cho cá nhân và doanh nghiệp đang cần vốn gấp.`}</p>
-            <p className="hidden md:block text-sm lg:text-[16px]">{`Chúng tôi cam kết bảo mật thông tin khách hàng tuyệt đối, thẩm định minh bạch và hỗ trợ tận tâm 24/7. Dù bạn cần vay thế chấp nhà, xe, hoặc tài sản giá trị khác, Vnlendx luôn sẵn sàng đồng hành cùng bạn trên hành trình vượt qua khó khăn tài chính và phát triển bền vững."`}</p>
-            <p className="block md:hidden text-sm">{`"Vnlendx là ứng dụng tài chính hiện đại, chuyên cung cấp dịch vụ vay vốn thế chấp tài sản một cách nhanh chóng, minh bạch và an toàn..."`}</p>
+            <p className="font-bold text-sm sm:text-lg md:text-xl lg:text-2xl mb-6 text-start">Giới thiệu về X-Finance</p>
+            <p className="hidden md:block mb-6 text-sm lg:text-[16px]">{`"X-Finance là ứng dụng tài chính hiện đại, chuyên cung cấp dịch vụ vay vốn thế chấp tài sản một cách nhanh chóng, minh bạch và an toàn. Với quy trình xét duyệt đơn giản, giải ngân linh hoạt và lãi suất cạnh tranh, X-Finance mang đến giải pháp tài chính hiệu quả cho cá nhân và doanh nghiệp đang cần vốn gấp.`}</p>
+            <p className="hidden md:block text-sm lg:text-[16px]">{`Chúng tôi cam kết bảo mật thông tin khách hàng tuyệt đối, thẩm định minh bạch và hỗ trợ tận tâm 24/7. Dù bạn cần vay thế chấp nhà, xe, hoặc tài sản giá trị khác, X-Finance luôn sẵn sàng đồng hành cùng bạn trên hành trình vượt qua khó khăn tài chính và phát triển bền vững."`}</p>
+            <p className="block md:hidden text-sm">{`"X-Finance là ứng dụng tài chính hiện đại, chuyên cung cấp dịch vụ vay vốn thế chấp tài sản một cách nhanh chóng, minh bạch và an toàn..."`}</p>
             <Button className="h-10 sm:h-12 rounded-3xl px-6 py-3 text-center text-white flex flex-row items-center justify-center gap-2 text-sm sm:text-md font-bold leading-none bg-[#1F2937] hover:bg-gray-800 cursor-pointer shadow-custom mt-4 sm:mt-10">
               <span className="leading-none">Đăng ký ngay</span>
               <Image
@@ -76,8 +70,8 @@ export default function HomeLoanPackage() {
 
       <div className="max-w-[840px] mt-10 sm:mt-14 md:mt-20">
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center">
-          <span className="text-main-color">Vnlendx</span> giải quyết vấn đề tài
-          chính
+          <span className="text-main-color">X-Finance</span> giải quyết vấn đề
+          tài chính
         </p>
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center">
           cho người dùng
@@ -152,7 +146,7 @@ export default function HomeLoanPackage() {
 
       <div className="mt-10 md:mt-20 max-w-[1164px] w-full mx-auto">
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-14 text-center">
-          Mọi người nói gì về <span className="text-main-color">Vnlendx</span>
+          Mọi người nói gì về <span className="text-main-color">X-Finance</span>
         </p>
 
         <div>
@@ -182,12 +176,11 @@ export default function HomeLoanPackage() {
                     className="rounded-full"
                   />
                   <div>
-                    <p className="font-bold text-md md:text-lg mb-2">
-                      {item.name}
-                    </p>
+                    <p className="font-bold text-md md:text-lg mb-2">{item.name}</p>
                     <p className="text-sm text-gray-600">{item.position}</p>
                   </div>
                 </div>
+                
               </div>
             ))}
           </div>
